@@ -130,7 +130,7 @@ button:hover{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 1em;
-	background-color: #191919;
+	background-color: #0e0341;
 	width: 90%;
 	padding: 1em 1em 2em;
 	min-width: 475px;

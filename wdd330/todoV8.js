@@ -84,18 +84,18 @@ class ListItemCollection {
 		//retrieve the container to put the new item in.
 		let itemContainer = document.getElementById("item-container");
 		let item = this.itemList.filter(obj => obj.name == name);
-		let skull = "⌛";
-		let crossBones = "✔️";
+		let hDone = "⌛";
+		let checkMark = "✔️";
 		//create div to hold the pieces
 		let div = itemContainer.appendChild(createElement("div", "", "lineItem", name));
 		//append the pieces to the div
 		try {
 			//set appropriate class and content based on whether it's completed
 			if (!item[0].complete) {
-				div.appendChild(createElement("button", skull, "skull", name)).addEventListener("click", markDone);
+				div.appendChild(createElement("button", hDone, "hDone", name)).addEventListener("click", markDone);
 				div.appendChild(createElement("div", item[0].text, "items", name));
 			} else {
-				div.appendChild(createElement("button", crossBones, "bones", name)).addEventListener("click", markUndone)
+				div.appendChild(createElement("button", checkMark, "bones", name)).addEventListener("click", markUndone)
 				div.appendChild(createElement("div", item[0].text, "items", name)).classList.add("done");
 			}
 		} catch (error) {

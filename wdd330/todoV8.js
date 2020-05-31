@@ -95,7 +95,7 @@ class ListItemCollection {
 				div.appendChild(createElement("button", hDone, "hDone", name)).addEventListener("click", markDone);
 				div.appendChild(createElement("div", item[0].text, "items", name));
 			} else {
-				div.appendChild(createElement("button", checkMark, "bones", name)).addEventListener("click", markUndone)
+				div.appendChild(createElement("button", checkMark, "checkMark", name)).addEventListener("click", markUndone)
 				div.appendChild(createElement("div", item[0].text, "items", name)).classList.add("done");
 			}
 		} catch (error) {

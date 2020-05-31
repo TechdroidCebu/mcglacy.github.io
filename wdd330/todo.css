@@ -13,8 +13,9 @@ body {
 }
 
 h1, h2{
-	font-family: 'Permanent Marker', cursive;
+	/*font-family: 'Permanent Marker', cursive;*/
 	/*font-family: 'Bangers', cursive;*/
+	font-family: 'Bangers', cursive;
 	color: #a6a5a5;
 	text-align: center;
 	letter-spacing: 4px;

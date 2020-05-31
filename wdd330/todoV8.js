@@ -130,7 +130,7 @@ class ListItemCollection {
 		let remainingItems = this.itemList.filter(item => item.complete == false).length;
 		//display remaining items
 		let display = document.getElementById("remaining");
-		display.innerHTML = `${remainingItems} thing${remainingItems==1 ? '': 's'} Task Left`;
+		display.innerHTML = `${remainingItems} Task${remainingItems==1 ? '': 's'} Left`;
 	}
 	
 }

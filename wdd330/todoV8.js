@@ -84,8 +84,8 @@ class ListItemCollection {
 		//retrieve the container to put the new item in.
 		let itemContainer = document.getElementById("item-container");
 		let item = this.itemList.filter(obj => obj.name == name);
-		let skull = "💀";
-		let crossBones = "☠";
+		let skull = "✔️";
+		let crossBones = "⏳";
 		//create div to hold the pieces
 		let div = itemContainer.appendChild(createElement("div", "", "lineItem", name));
 		//append the pieces to the div
@@ -102,7 +102,7 @@ class ListItemCollection {
 			console.log("There was no 'complete' property");
 			console.log(error.message);
 		}
-		div.appendChild(createElement("button", "💣", "delete", name)).addEventListener("click", removeItem);
+		div.appendChild(createElement("button", "❌", "delete", name)).addEventListener("click", removeItem);
 		//if incomplete, prepend div to top of the list
 		if (!item[0].complete) {
 			itemContainer.prepend(div);
